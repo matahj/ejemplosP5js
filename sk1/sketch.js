@@ -2,29 +2,31 @@ let walker;
 
 function setup() {
   createCanvas(594, 364);
-  background(255);
-
-  walker = new Walker();
 
   //noLoop();
 }
 
 function draw() {
-  
-  walker.display();
-  walker.step();
+  background(255);
 
+  if (mouseIsPressed) {
+    fill(0);
+  } else {
+    fill(255);
+  }
+  ellipse(mouseX, mouseY, 80, 80);
+  //console.log(mouseX, mouseY);
 }
 
 class Walker {
-  
+
   constructor() {
     this.x = width / 2;
     this.y = height / 2;
   }
 
   display() {
-    stroke(color(255,0,0));
+    stroke(color(255, 0, 0));
     point(this.x, this.y);
   }
 
