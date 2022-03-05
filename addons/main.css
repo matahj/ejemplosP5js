@@ -1,0 +1,27 @@
+body {
+    background-color: rgb(228, 228, 228);
+}
+
+main {
+    margin: 0px;
+    border: solid 3px;
+    border-color: black;
+    padding: 0px;
+    width: 600px;
+    height: 370px;
+}
+
+[class*="col"] {
+    padding: 1rm;
+    background-color: rgb(24, 188, 218);
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.navbar {
+    background-color: #ED225D;
+}
+
+.offcanvas-body {
+    background-color: #ED225D;
+}
