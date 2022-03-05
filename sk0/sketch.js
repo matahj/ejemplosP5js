@@ -6,7 +6,7 @@ function setup() {
 
   walker = new Walker();
 
-  //noLoop();
+  noLoop();
 }
 
 function draw() {

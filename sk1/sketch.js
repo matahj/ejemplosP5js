@@ -3,7 +3,7 @@ let walker;
 function setup() {
   createCanvas(594, 364);
 
-  //noLoop();
+  noLoop();
 }
 
 function draw() {
