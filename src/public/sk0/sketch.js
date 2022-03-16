@@ -1,7 +1,7 @@
 let walker;
 
 function setup() {
-  createCanvas(594, 364);
+  createCanvas(594, 363);
   background(255);
 
   walker = new Walker();

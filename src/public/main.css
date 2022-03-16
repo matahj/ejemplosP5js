@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(228, 228, 228);
+    background-color: #C6DAD8;
 }
 
 main {
@@ -13,15 +13,19 @@ main {
 
 [class*="col"] {
     padding: 1rm;
-    background-color: rgb(24, 188, 218);
+    background-color: #dce2da;
     border: 2px solid #fff;
-    color: #fff;
+    color: rgba(20, 22, 21, 0.561);
 }
 
 .navbar {
-    background-color: #ED225D;
+    background-color: #57A519;
 }
 
 .offcanvas-body {
-    background-color: #ED225D;
+    background-color: #57A519;
+}
+
+p.info {
+    color: rgba(20, 22, 21, 0.561);
 }
