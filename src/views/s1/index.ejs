@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('../partials/header'); %>
+
+    <body>
+
+        <!-- NAVBAR -->
+        <%- include('../partials/navigation.ejs'); %>
+
+            <div class="container-md border">
+
+                <!-- CONTENIDO -->
+                <div class="row align-items-start">
+
+                    <!-- CANVAS P5js -->
+                    <div class="col-md-8 align-self-start">
+                        <main>
+                        </main>
+                    </div>
+
+                    <!-- DESCRIPCIÓN -->
+                    <div class="col-md-4 align-self-stretch">
+
+                        <% item=datos.filter( d=> d.id==='s1'); %>
+
+                            <div class="card">
+                                <div class="card-header">
+                                    <%= item[0].title %>
+                                </div>
+                                <div class="card-body">
+                                    <p>
+                                        <%= item[0].desc %>
+                                    </p>
+                                </div>
+                            </div>
+                    </div>
+
+                </div>
+
+                <!-- FOOTER -->
+                <%- include('../partials/footer.ejs'); %>
+
+            </div>
+
+            <!-- SCRIPTS -->
+            <%- include('../partials/scripts.ejs'); %>
+
+                <!-- Sketch 0 -->
+                <script src="s1/sketch.js"></script>
+
+    </body>
+
+</html>
