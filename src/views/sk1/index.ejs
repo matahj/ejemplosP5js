@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<%- include('../partials/header.ejs'); %>
+<%- include('../partials/header'); %>
 
     <body>
 
@@ -12,17 +12,17 @@
 
                 <!-- CONTENIDO -->
                 <div class="row align-items-start">
-                    
+
                     <!-- CANVAS P5js -->
                     <div class="col-md-8 align-self-start">
                         <main>
                         </main>
                     </div>
-                    
+
                     <!-- DESCRIPCIÓN -->
                     <div class="col-md-4 align-self-stretch">
 
-                        <% item=datos.filter( d=> d.id==='s2'); %>
+                        <% item=datos.filter( d=> d.id==='s1'); %>
 
                             <div class="card">
                                 <div class="card-header">
@@ -46,8 +46,8 @@
             <!-- SCRIPTS -->
             <%- include('../partials/scripts.ejs'); %>
 
-                <!-- Sketch -->
-                <script src="s2/sketch.js"></script>
+                <!-- Sketch 0 -->
+                <script src="sk1/sketch.js"></script>
 
     </body>
 

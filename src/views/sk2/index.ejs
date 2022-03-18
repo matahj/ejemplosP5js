@@ -21,8 +21,19 @@
                     
                     <!-- DESCRIPCIÓN -->
                     <div class="col-md-4 align-self-stretch">
-                        <h5 id="titulo">404 not Found</h5>
-                        <p id="descripcion">404 not Found</p>
+
+                        <% item=datos.filter( d=> d.id==='s2'); %>
+
+                            <div class="card">
+                                <div class="card-header">
+                                    <%= item[0].title %>
+                                </div>
+                                <div class="card-body">
+                                    <p>
+                                        <%= item[0].desc %>
+                                    </p>
+                                </div>
+                            </div>
                     </div>
 
                 </div>
@@ -35,8 +46,8 @@
             <!-- SCRIPTS -->
             <%- include('../partials/scripts.ejs'); %>
 
-                <!-- Sketch 0 -->
-                <script src="s0/sketch.js"></script>
+                <!-- Sketch -->
+                <script src="sk2/sketch.js"></script>
 
     </body>
 
