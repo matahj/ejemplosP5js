@@ -18,24 +18,15 @@
                     aria-label="Close"></button>
             </div>
 
-            <% console.log(skid); %>
-
             <div class="offcanvas-body">
                 <!-- LISTA DE ITEMS -->
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/sketches/sk1">Uno</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/sketches/sk2">Dos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/sketches/sk3">Tres</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/sketches/sk4">Cuatro</a>
-                    </li>
+
+                    <% datos.forEach( function (d){ %>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="<%= '/sketches/'+d.id %>"> <%= d.title %>  </a>
+                        </li>
+                    <% } ) %>
                 </ul>
             </div>
 

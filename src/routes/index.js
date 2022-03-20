@@ -13,8 +13,8 @@ router.get('/sketches/:id', (req, res, next) => {
     if (item.length === 0) {
         next();
     } else {
-        let ruta = 'sketches/' + req.params.id + '/index';
-        res.render(ruta, { datos, skid: req.params.id });
+        // let ruta = 'sketches/' + req.params.id + '/index';
+        res.render('sketches/sk1/index', { datos, skid: req.params.id });
     }
 });
 
