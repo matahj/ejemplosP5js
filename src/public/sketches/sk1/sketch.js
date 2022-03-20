@@ -6,7 +6,7 @@ function setup() {
 
   walker = new Walker();
 
-  noLoop();
+  //noLoop();
 }
 
 function draw() {
@@ -31,7 +31,7 @@ class Walker {
   step() {
     let dirs = [0, 1, 2, 3];
     let choice = random(dirs);
-    console.log(choice);
+    // console.log(choice);
 
     if (choice == 0) {
       this.x++;
