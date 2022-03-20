@@ -1,4 +1,4 @@
-## Sitio para mostrar ejemplos de programación creativa codificados con P5js  
+## Sitio para mostrar ejemplos de programación creativa P5js  
 
 **Para agregar un ejemplo (un sketch.js de P5js):**  
 
@@ -27,6 +27,7 @@ npm run dev
 ```
 
 **Tareas pendientes:**  
+* Agregar contenido (título, sketches, footer)
 * Automatizar el proceso para cargar un nuevo ejemplo, agregando una página para subir el archivo sketch.js y que de manera automática se guarde en el directorio correcto y se cree una entrada en datos.js.
 
 
