@@ -10,7 +10,7 @@ let states = [];
 // starts. Here, we fill the array 'values' with random values
 // and the array 'states' with a value of -1 for each position.
 function setup() {
-  createCanvas(594, 363);
+  createCanvas(520, 320);
   for(let i = 0; i < width/8; i++) {
     values.push(random(height));
     states.push(-1);

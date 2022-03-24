@@ -46,7 +46,7 @@ class Particle {
   let particles = [];
   
   function setup() {
-    createCanvas(594, 363);
+    createCanvas(520, 320);
     for(let i = 0;i<width/10;i++){
       particles.push(new Particle());
     }

@@ -3,12 +3,10 @@ body {
 }
 
 main {
-    margin: 0px;
     border: solid 3px;
     border-color: black;
-    padding: 0px;
-    width: 600px;
-    height: 370px;
+    width: 526px;
+    height: 326px;
 }
 
 [class*="col"] {
