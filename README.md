@@ -4,7 +4,7 @@
 
 1. Clonar el proyecto.  
 
-2. Crear el directorio **consecutivo**, por ejemplo "sk5", en "src/public/sketches" y dentro crear el archivo sketch.js (*5 es el número consecutivo del nuevo sketch*): 
+2. Crear el directorio **consecutivo**, por ejemplo "sk5", en "src/public/sketches" y dentro crear el archivo sketch.js (5 es el número consecutivo del nuevo sketch, tamaño del canvas 520x320): 
 ```
 "src/public/sketches/sk5/sketch.js"
 ```  
@@ -22,13 +22,13 @@
 
 ```
 git clone https://github.com/matahj/ejemplosP5js.git
+cd ejemplosP5js
 npm install
 npm run dev
 ```
 
 **Tareas pendientes:**  
-* Agregar contenido (título, sketches, footer)
-* Automatizar el proceso para cargar un nuevo ejemplo, agregando una página para subir el archivo sketch.js y que de manera automática se guarde en el directorio correcto y se cree una entrada en datos.js.
+* Automatizar el proceso para cargar un nuevo sketch, agregando una página para subir el archivo sketch.js y que de manera automática se guarde en el directorio correcto y se cree una entrada en datos.js.
 
 
 **Los sketches incluidos están basados y/o tomados de:**  

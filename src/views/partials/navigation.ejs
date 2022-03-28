@@ -9,7 +9,8 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
 
             <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Ejemplos P5js</h5>
@@ -18,17 +19,20 @@
             </div>
 
             <div class="offcanvas-body">
-                
+
                 <!-- LISTA DE ITEMS -->
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
 
                     <% datos.forEach( function (d){ %>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="<%= '/sketches/'+d.id %>"> <%= d.title %>  </a>
+                            <a class="nav-link active" aria-current="page" href="<%= '/sketches/'+d.id %>">
+                                <%= d.title %>
+                            </a>
                         </li>
-                    <% } ) %>
+                        <% } ) %>
 
                 </ul>
+                
             </div>
 
 
