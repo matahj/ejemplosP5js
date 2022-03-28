@@ -14,22 +14,24 @@
                 <div class="row align-items-start">
 
                     <!-- CANVAS P5js -->
-                    <div class="col-12 col-lg-7 col-xl-6 col-xxl-5 align-self-start">
+                    <div class="col-12 col-lg-7 col-xl-6 col-xxl-5 align-self-start py-3">
                         <main>
                         </main>
                     </div>
 
                     <!-- DESCRIPCIÓN -->
-                    <div class="col-12 col-lg-5 col-xl-6 col-xxl-7 align-self-stretch">
+                    <div class="col-12 col-lg-5 col-xl-6 col-xxl-7 align-self-stretch  py-3">
 
                         <% item=datos.filter( d=> d.id===skid); %>
 
                             <div class="card">
                                 <div class="card-header">
-                                    <%= item[0].title %>
+                                    <h5 class="card-title">
+                                        <%= item[0].title %>
+                                    </h5>
                                 </div>
                                 <div class="card-body">
-                                    <p>
+                                    <p class="card-text">
                                         <%= item[0].desc %>
                                     </p>
                                 </div>
