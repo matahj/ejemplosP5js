@@ -1,4 +1,4 @@
-let numWalkers = 3;
+let numWalkers = 1;
 const tam = 8;
 let fils;
 let cols;
