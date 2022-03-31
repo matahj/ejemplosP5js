@@ -1,51 +1,57 @@
-let walker;
+let numWalkers = 3;
+const tam = 8;
+let fils;
+let cols;
+const colores = [];
+const walkers = [];
 
 function setup() {
   createCanvas(520, 320);
   background(204, 204, 255);
 
-  walker = new Walker();
+  //tamaño del arreglo de colores
+  fils = Math.floor(height / tam);
+  cols = Math.floor(width / tam);
+
+  //inicialización del arreglo de colores
+  for (let i = 0; i < fils; i++) {
+    colores[i] = [];
+    for (let j = 0; j < cols; j++) {
+      colores[i][j] = 255;
+    }
+  }
+
+  for (let i = 0; i < numWalkers; i++) {
+    walkers[i] = new Walker();
+  }
 
   //noLoop();
 }
 
 function draw() {
 
-  walker.display();
-  walker.step();
+  for (let i = 0; i < numWalkers; i++) {
+    walkers[i].display();
+    walkers[i].step();
+  }
 
 }
 
 class Walker {
-  tam = 8; //tamaño del caminante
-  colores = []; //color que pinta
 
   constructor() {
-    //tamaño del arreglo de colores
-    this.fils = Math.floor(height / this.tam);
-    this.cols = Math.floor(width / this.tam);
-
-    //inicialización del arreglo de colores
-    for (let i = 0; i < this.fils; i++) {
-      this.colores[i] = [];
-      for (let j = 0; j < this.cols; j++) {
-        this.colores[i][j] = 255;
-      }
-    }
-
     //posición inicial
     this.fil = Math.floor(height / 2);
     this.col = Math.floor(width / 2);
-
   }
 
   display() {
-    stroke(color(255, 0, 0));
+    stroke('red');
 
-    fill(this.colores[Math.floor(this.fil / this.tam)][Math.floor(this.col / this.tam)]);
-    this.colores[Math.floor(this.fil / this.tam)][Math.floor(this.col / this.tam)] -= 15;
+    fill(colores[Math.floor(this.fil / tam)][Math.floor(this.col / tam)]);
+    colores[Math.floor(this.fil / tam)][Math.floor(this.col / tam)] -= 15;
 
-    rect(this.col, this.fil, this.tam, this.tam);
+    rect(this.col, this.fil, tam, tam);
   }
 
   step() {
@@ -53,13 +59,13 @@ class Walker {
     let choice = random(dirs);
 
     if (choice == 0) {//derecha
-      this.col = Math.abs(this.col + this.tam) % width;
+      this.col = Math.abs(this.col + tam) % width;
     } else if (choice == 1) {//abajo
-      this.fil = Math.abs(this.fil + this.tam) % height;
+      this.fil = Math.abs(this.fil + tam) % height;
     } else if (choice == 2) {//arriba
-      this.col = Math.abs(this.col - this.tam) % width;
+      this.col = Math.abs(this.col - tam) % width;
     } else {//izquierda
-      this.fil = Math.abs(this.fil - this.tam) % height;
+      this.fil = Math.abs(this.fil - tam) % height;
     }
   }
 }
