@@ -12,6 +12,12 @@ main {
     margin-left: auto;
     margin-right: auto;
 }
+#interaccion{
+    width: 526px;
+    padding: 8px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 [class*="col"] {
     padding: 1rm;
@@ -35,3 +41,4 @@ main {
 p.info {
     color: rgba(20, 22, 21, 0.561);
 }
+

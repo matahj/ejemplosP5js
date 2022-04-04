@@ -5,6 +5,17 @@ let cols;
 const colores = [];
 const walkers = [];
 
+let inp;
+
+function preload() {
+  let sp = createSpan('Establecer número de caminantes');
+  inp = createInput('1');
+  inp.size(40,20);
+  const interaccion = select('#interaccion');
+  interaccion.child(sp);
+  interaccion.child(inp);
+}
+
 function setup() {
   createCanvas(520, 320);
   background(204, 204, 255);
@@ -35,6 +46,13 @@ function draw() {
     walkers[i].step();
   }
 
+  inp.input(reiniciar);
+}
+
+function reiniciar() {
+  numWalkers = this.value();
+  //console.log('numWalkers: ', numWalkers);
+  setup();
 }
 
 class Walker {
