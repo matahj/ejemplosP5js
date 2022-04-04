@@ -9,12 +9,12 @@
 "src/public/sketches/sk5/sketch.js"
 ```  
 
-3. Agregar una entrada al archivo datos.json, con el identificador del sketche (*debe coincidir con el nombre del directorio consecutivo*), el título y la descripción, ejemplo de entrada:
+3. Agregar una entrada al archivo datos.json, con el identificador del sketch (*debe coincidir con el nombre del directorio consecutivo*), el título y la descripción, ejemplo de entrada:
 ```
 {
     "id": "sk5",
-    "title": "Título del sketche 5",
-    "desc": "Descripción del sketche 5"
+    "title": "Título del sketch 5",
+    "desc": "Descripción del sketch 5"
 }
 ```
 
@@ -31,8 +31,15 @@ npm run dev
 * Automatizar el proceso para cargar un nuevo sketch, agregando una página para subir el archivo sketch.js y que de manera automática se guarde en el directorio correcto y se cree una entrada en datos.js.
 
 
-**Los sketches incluidos están basados y/o tomados de:**  
+**Algunos sketches están basados y/o tomados de:**  
 * La página oficial de P5js (ejemplos).
-* The Nature of Code by Daniel Shiffman (trasladados de processing a P5js).  
+* The Nature of Code by Daniel Shiffman (trasladados de processing a P5js). 
 
- 
+
+
+**El sitio se desarrolló con:** 
+* NodeJS
+* ExpressJS
+* EJS
+* Bootstrap 5
+

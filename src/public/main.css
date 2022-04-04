@@ -3,17 +3,18 @@ body {
 }
 
 main {
-    border: solid 3px;
+    border: solid 1px;
     border-color: black;
-    width: 526px;
-    height: 326px;
-    padding-left: 0;
-    padding-right: 0;
+    width: 522px;
+    height: 322px;
+    padding: 0px;
     margin-left: auto;
     margin-right: auto;
 }
-#interaccion{
-    width: 526px;
+
+#interaccion {
+    width: 522px;
+    height: 40px;
     padding: 8px;
     margin-left: auto;
     margin-right: auto;
@@ -21,8 +22,8 @@ main {
 
 [class*="col"] {
     padding: 1rm;
-    background-color: #dce2da;
-    border: 2px solid #fff;
+    background-color:#dce2da;
+    border: 2px solid #dce2da;
     color: rgba(20, 22, 21, 0.561);
 }
 
@@ -34,11 +35,17 @@ main {
     background-color: #57A519;
 }
 
-.offcnavas-width{
+.offcnavas-width {
     width: 220px;
 }
 
-p.info {
-    color: rgba(20, 22, 21, 0.561);
+.footer {
+    
+    border: 0px;
+    background-color: #57A519;
+    color: #fff;
 }
 
+.btnfooter{
+    background-color: #57A519;
+}
