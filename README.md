@@ -1,5 +1,14 @@
 ## Sitio para mostrar ejemplos de programación creativa P5js  
 
+
+
+[https://ejemplos-p5js.herokuapp.com/](https://ejemplos-p5js.herokuapp.com/)
+
+![](/src/public/imgA.png)
+
+![](/src/public/imgB.png)
+
+
 **Para agregar un ejemplo (un sketch.js de P5js):**  
 
 1. Clonar el proyecto.  
@@ -26,8 +35,14 @@ cd ejemplosP5js
 npm install
 npm run dev
 ```
+o
 
-**Tareas pendientes:**  
+```
+npm start
+```
+
+
+**Pendiente:**  
 * Automatizar el proceso para cargar un nuevo sketch, agregando una página para subir el archivo sketch.js y que de manera automática se guarde en el directorio correcto y se cree una entrada en datos.js.
 
 
@@ -37,9 +52,11 @@ npm run dev
 
 
 
-**El sitio se desarrolló con:** 
+**Se utilizó:** 
+* P5js
 * NodeJS
 * ExpressJS
 * EJS
 * Bootstrap 5
+* Heroku
 
