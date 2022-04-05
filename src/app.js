@@ -4,8 +4,10 @@ const morgan = require('morgan');
 
 const app = express();
 
+const PORT = process.env.PORT || 3000;
+
 //SETTINGS
-app.set('port', 3000);
+app.set('port', PORT);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
